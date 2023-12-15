@@ -1,0 +1,724 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andi Yahya || Homepage</title>
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
+    <link rel="stylesheet" href="./dist/css/final.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header
+      class="absolute left-0 top-0 z-10 flex w-full items-center bg-transparent"
+    >
+      <div class="container">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a href="#home" class="block py-6 text-lg font-bold text-primary"
+              >Andi Yahya</a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute right-4 block lg:hidden"
+            >
+              <span
+                class="hamburger-line transition-all duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition-all duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition-all duration-300 ease-in-out"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-6 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
+                    >About Me</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portfolio"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#blog"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
+                    >Blog</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#technology"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
+                    >Technology</a
+                  >
+                </li>
+
+                <li class="group">
+                  <a
+                    href="#footer"
+                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
+                    >Contact Me</a
+                  >
+                </li>
+                <li class="mt-3 flex items-center pl-8 lg:mt-0">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">light</span>
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div
+                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500"
+                      >
+                        <div
+                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"
+                        ></div>
+                      </div>
+                    </label>
+                    <span id="" class="ml-2 text-sm text-slate-500">dark</span>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Hero Section Start -->
+    <section class="pt-36 dark:bg-dark" id="home">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl">
+              Hi There 👋, <span>I'am</span>
+              <span
+                class="mt-1 block text-4xl font-bold text-dark dark:text-white lg:text-5xl"
+              >
+                Andi Yahya
+              </span>
+            </h1>
+            <h2 class="mb-5 text-lg font-medium text-secondary lg:text-2xl">
+              <span class="text-dark dark:text-white" id="saya"
+                >Student at Universitas Muhammadiyah Bengkulu</span
+              >
+            </h2>
+            <p class="mb-10 text-base font-medium leading-relaxed text-slate-400">
+              Web Design and Development Enthusiast
+            </p>
+
+            <a
+              href="#footer"
+              class="rounded-full bg-primary px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+              >Contact Me</a
+            >
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2">
+            <div class="relative mt-10 lg:right-0 lg:mt-9">
+              <img
+                src="dist/img/myImage.png"
+                alt="Andi Yahya"
+                class="relative z-10 mx-auto max-w-full dark:drop-shadow-3xl"
+              />
+              <span
+                class="absolute -bottom-0 left-1/2 -translate-x-1/2 md:bottom-12 md:scale-125"
+              >
+                <svg
+                  width="400"
+                  height="300"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="#C70039"
+                    d="M55.1,-62.2C69.7,-53.5,78.4,-34.4,77.6,-17C76.7,0.5,66.4,16.4,57.5,34.5C48.7,52.6,41.3,72.9,27,81.2C12.7,89.5,-8.6,85.7,-20.7,73.9C-32.9,62.1,-35.9,42.3,-46.5,25.9C-57.1,9.5,-75.3,-3.5,-78.4,-18.8C-81.6,-34,-69.8,-51.6,-54.2,-60.1C-38.7,-68.6,-19.3,-68,0.5,-68.6C20.3,-69.2,40.6,-70.9,55.1,-62.2Z"
+                    transform="translate(100 100) scale(1.1)"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="about" class="pb-32 pt-36 dark:bg-dark">
+      <div class="container flex flex-wrap">
+        <div class="mb-10 w-full px-4 lg:w-1/2">
+          <h4 class="mb-3 text-lg font-bold uppercase text-primary">
+            Tentang Saya
+          </h4>
+          <h2
+            class="mb-5 max-w-md text-3xl font-bold text-dark dark:text-white lg:text-4xl"
+          >
+            Who am i?
+          </h2>
+          <p class="max-w-xl text-base font-medium text-secondary lg:text-lg">
+            I'am a third-year student of Informatics Engineering at the Faculty
+            of Engineering, Muhammadiyah University of Bengkulu (UMB). I have
+            actively engaged in various Kampus Merdeka activities such as
+            Pertukaran Mahasiswa Merdeka 2 and International Student Exchange,
+            while also dedicating my time to training through platforms like
+            Dicoding Indonesia, RevoU, and Sololearn, with a focus on enhancing
+            my proficiency in web development, specifically the MERN Stack
+            (React and Node.js) and These experiences reflect my commitment to
+            both critical and technical skill in Web Development. I am confident
+            that these knowledge and skills I have gained so far will contribute
+            positively and I am confident that this internship will be a pivotal
+            step in my ongoing professional growth.
+          </p>
+        </div>
+        <div class="w-full px-4 lg:w-1/2">
+          <h3
+            class="mb-4 text-2xl font-semibold text-dark dark:text-white lg:pt-10 lg:text-3xl"
+          >
+            Let's Connect
+          </h3>
+          <p class="mb-6 text-base font-medium text-secondary lg:text-lg">
+            Friends prevent isolation and loneliness and give you a chance to
+            offer strength 😉
+          </p>
+          <div class="flex items-center">
+            <!-- Youtube -->
+            <!-- <a
+				href="#"
+				target="_blank"
+				class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+				>
+				<svg
+					class="fill-current"
+					width="20"
+					role="img"
+					viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<title>YouTube</title>
+					<path
+					d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+					/>
+				</svg>
+				</a> -->
+            <!-- Instagram -->
+            <a
+              href="https://instagram.com/yhya.si_30"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                class="fill-current"
+                width="20"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Instagram</title>
+                <path
+                  d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                />
+              </svg>
+            </a>
+            <!-- Twitter -->
+            <!-- <a
+				href="#"
+				target="_blank"
+				class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+				>
+				<svg
+					width="20"
+					class="fill-current"
+					role="img"
+					viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<title>X</title>
+					<path
+					d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+					/>
+				</svg>
+				</a> -->
+            <!-- Facebook -->
+            <a
+              href="https://web.facebook.com/andi.yahya.16144/"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                width="20"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-current"
+              >
+                <title>Facebook</title>
+                <path
+                  d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
+                />
+              </svg>
+            </a>
+            <!-- Linkedin -->
+            <a
+              href="https://www.linkedin.com/in/andi-yahya-a92a0a256/"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                width="20"
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-current"
+              >
+                <title>LinkedIn</title>
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section id="portfolio" class="bg-slate-100 pb-16 pt-36 dark:bg-slate-800">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-primary">Portfolio</h4>
+            <h2
+              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
+            >
+              Projects
+            </h2>
+            <p class="text-md font-medium text-secondary md:text-lg">
+              Here are some projects that i made
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12"
+        >
+          <div class="mb-23 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                class="w-full"
+                src="./dist/img/news-web-1.png"
+                alt="landing"
+                title="satu"
+              />
+            </div>
+            <h3 class="mb-3 mt-5 text-xl font-light text-dark dark:text-white">
+              News websites
+            </h3>
+            <p class="text-base font-medium text-secondary">
+              A news website and Movie Discoverage page. It was designed in
+              group consists of 2 people. This website was built with HTML 5,
+              CSS 3, Bootstrap 5 and Javascript.
+            </p>
+          </div>
+          <div class="mb-23 p-4 md:w-1/2">
+            <div class="overflow-hidden rounded-md shadow-md">
+              <img
+                class="w-full"
+                src="./dist/img/web-2.png"
+                alt="landing"
+                title="dua"
+              />
+            </div>
+            <h3 class="mb-3 mt-5 text-xl font-light text-dark dark:text-white">
+              ANIMELIST
+            </h3>
+            <p class="text-base font-medium text-secondary">
+              Animelist website is a website for showing list of anime movies
+              that i collected using Jikan, Jikan is an unofficial MyAnimeList
+              REST based API. This project was built with React.js and Next.js
+              as framework for developing website, TailwindCSS for styling the
+              elements, and here i made simple auntentication using Github OAuth
+              Apps.
+            </p>
+            <p></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Blog Section Start -->
+    <section id="blog" class="bg-slate-100 pb-32 pt-36 dark:bg-dark">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 max-w-xl text-center">
+            <h4 class="mb-2 text-lg font-semibold text-primary">Blog</h4>
+            <h2
+              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
+            >
+              Activities
+            </h2>
+            <p class="text-md font-medium text-secondary md:text-lg">
+              Here are some activities i have been involved throughout the year
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div
+              class="mb-10 h-[540px] overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 dark:shadow-slate-700"
+            >
+              <img
+                src="./dist/img/ausp.webp"
+                alt="Programming"
+                class="h-72 w-full"
+              />
+              <div class="px-6 py-8">
+                <h3>
+                  <a
+                    href="https://web.asia.edu.tw/EN/"
+                    class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white"
+                    >Asia University 2023 (AUSP)</a
+                  >
+                </h3>
+                <p class="mb-6 text-base font-medium text-secondary">
+                  <a
+                    href="https://web.asia.edu.tw/EN/"
+                    class="hover:text-primary hover:underline"
+                    >Asia University</a
+                  >
+                  Summer Program 2023 is a special term program for foreign
+                  student to experience one course during the program. In this
+                  Program, I took Web Design and Digital Storytelling Course.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div
+              class="mb-10 h-[540px] overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 dark:shadow-slate-700"
+            >
+              <img src="./dist/img/pmm.jpg" alt="Programming" class="w-full h-72 " />
+              <div class="px-6 py-8">
+                <h3>
+                  <a
+                    href="https://program-pmm.id/"
+                    class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white"
+                    >Pertukaran Mahasiswa Merdeka 2</a
+                  >
+                </h3>
+                <p class="mb-6 text-base font-medium text-secondary">
+                  This is a one-semester national student exchange program by Ministry of
+                  Culture, Research and Technology of The Republic of Indonesia.
+                  I took my term at Informatics and Information System Department in
+                  <a
+                    href="https://www.itenas.ac.id/"
+                    class="hover:text-primary hover:underline"
+                    >Bandung National Institute Of Technology.</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+            <div
+              class="mb-10 h-[540px] overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 dark:shadow-slate-700 "
+            >
+              <div class="bg-cover">
+                <img
+                  src="./dist/img/bdt.jpg"
+                  alt="Programming"
+                  class="h-72 w-full "
+                />
+              </div>
+              <div class="px-6 py-8 ">
+                <h3>
+                  <a
+                    href="https://bdd.kemenparekraf.go.id/"
+                    class=" mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white"
+                    >Baparekraf Digital Talent</a
+                  >
+                </h3>
+                <p class="mb-6 text-base font-medium text-secondary ">
+                  <a
+                    href="https://bdd.kemenparekraf.go.id/"
+                    class="hover:text-primary hover:underline"
+                    >Baparekraf Digital Talent (BDT)</a
+                  >
+                  is a Creative Digital Talent Development program facilitated
+                  by the Ministry of Tourism and Creative Economy/Baparekraf.
+                  This program facilitated me with front-end web developer
+                  learning path in
+                  <a
+                    href="https://www.dicoding.com/"
+                    class="hover:text-primary hover:underline"
+                    >Dicoding Indonesia.</a
+                  >
+                </p>
+                <!-- <a
+					href="#"
+					class="rounded-md bg-primary px-4 py-2 text-[10px] font-medium text-white hover:opacity-80 sm:text-sm"
+					>Baca Selengkapnya</a
+					> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Clients Section Start -->
+    <section id="technology" class="bg-slate-800 pb-32 pt-36 dark:bg-slate-300">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="mx-auto mb-16 text-center">
+            <!-- <h4 class="mb-2 text-lg font-semibold text-primary">Technology</h4> -->
+            <h2
+              class="mb-4 text-3xl font-bold text-primary dark:text-dark sm:text-4xl lg:text-5xl"
+            >
+              Technology
+            </h2>
+            <p class="text-md font-medium text-secondary md:text-lg">
+              These are technologies that im currently using for developing my
+              website
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <a
+              href="https://www.w3schools.in/html/history"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:scale-105 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img class="mt-7" src="dist/img/clients/html5.svg" alt="" />
+            </a>
+
+            <a
+              href="https://en.wikipedia.org/wiki/CSS"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:scale-105 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/img/clients/css.svg" alt="" />
+            </a>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/API/History"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:scale-105 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/img/clients/js.svg" alt="" />
+            </a>
+            <a
+              href="https://react.dev/"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:scale-105 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/img/clients/react.svg" alt="" />
+            </a>
+
+            <a
+              href="https://tailwindcss.com/"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:scale-105 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+            >
+              <img src="dist/img/clients/tailwindcss.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Clients Section End -->
+
+
+    <!-- Footer Start  -->
+    <footer class="bg-dark pb-12 pt-24 " id="footer">
+      <div class="container ">
+        <div class="flex flex-wrap">
+          <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
+            <h2 class="mb-2 text-4xl font-bold text-white">ANDI YAHYA</h2>
+            <h3 class="mb-2 text-2xl font-bold">Contact Me</h3>
+            <p>andiyahya675@gmail.com</p>
+            <div class="w-full pt-1">
+              <div class="mb-2 flex  justify-start">
+                <!-- Instagram -->
+                <a
+                  href="#"
+                  target="_blank"
+                  class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                >
+                  <svg
+                    class="fill-current"
+                    width="20"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Instagram</title>
+                    <path
+                      d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                    />
+                  </svg>
+                </a>
+    
+                <!-- Facebook -->
+                <a
+                  href="#"
+                  target="_blank"
+                  class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                >
+                  <svg
+                    width="20"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fill-current"
+                  >
+                    <title>Facebook</title>
+                    <path
+                      d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"
+                    />
+                  </svg>
+                </a>
+                <!-- Linkedin -->
+                <a
+                  href="#"
+                  target="_blank"
+                  class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                >
+                  <svg
+                    width="20"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="fill-current"
+                  >
+                    <title>LinkedIn</title>
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+            </div>
+            <p>Bengkulu City, Bengkulu</p>
+            <p>Indonesia</p>
+          </div>
+          
+          <div class="mb-12 w-full px-4 md:w-1/3">
+            <h3 class="mb-2 text-xl font-thin text-white">Link</h3>
+            <ul class="text-slate-300">
+              <li>
+                <a
+                  href="#home"
+                  class="mb-3 inline-block text-base text-slate-300 hover:text-primary"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="mb-3 inline-block text-base text-slate-300 hover:text-primary"
+                  >About Me</a
+                >
+              </li>
+              <li id="12">
+                <a
+                  href="#portfolio"
+                  class="mb-3 inline-block text-base text-slate-300 hover:text-primary"
+                  >Portfolio</a
+                >
+              </li>
+              <li id="12">
+                <a
+                  href="#blog"
+                  class="mb-3 inline-block text-base text-slate-300 hover:text-primary"
+                  >Blog</a
+                >
+              </li>
+
+
+
+              <li id="12">
+                <a
+                  href="#technology"
+                  class="mb-3 inline-block text-base text-slate-300 hover:text-primary"
+                  >Technology</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full border-t border-slate-700 pt-10">
+          <div class="mb-5 flex items-center justify-center">
+            <!-- Instagram -->
+            
+          <p class="text-center text-sm font-medium text-slate-500">
+            &copy Was Created By
+            <a
+              href="https://www.linkedin.com/in/andi-yahya-a92a0a256/"
+              target="_blank"
+              class="hover:text-primary hover:underline"
+              >Andi Yahya</a
+            >, Using
+            <a
+              href="https://tailwindcss.com/"
+              target="_blank"
+              class="hover:text-primary hover:underline"
+              >Tailwind
+            </a>
+            <a
+              target="_blank"
+              class="hover:text-primary hover:underline"
+              href="https://www.w3schools.com/css/css_intro.asp"
+              >CSS</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Back to top Start  -->
+    <a
+      href="#home"
+      class="fixed bottom-2 right-2 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 active:animate-bounce"
+      id="to-top"
+    >
+      <span class="mt-2 block h-5 w-5 rotate-45 border-l-2 border-t-2"></span>
+    </a>
+    <!-- Back to top End  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="dist/js/script.js"></script>
+  </body>
+</html>
