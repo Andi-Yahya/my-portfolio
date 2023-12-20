@@ -6,8 +6,7 @@
     <title>Andi Yahya || Homepage</title>
     <script>
       if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
+        localStorage.theme === "dark" || (!("theme" in localStorage) &&
           window.matchMedia("(prefers-color-scheme: dark)").matches)
       ) {
         document.documentElement.classList.add("dark");
@@ -136,7 +135,9 @@
                 >Student at Universitas Muhammadiyah Bengkulu</span
               >
             </h2>
-            <p class="mb-10 text-base font-medium leading-relaxed text-slate-400">
+            <p
+              class="mb-10 text-base font-medium leading-relaxed text-slate-400"
+            >
               Web Design and Development Enthusiast
             </p>
 
@@ -214,25 +215,6 @@
             offer strength 😉
           </p>
           <div class="flex items-center">
-            <!-- Youtube -->
-            <!-- <a
-				href="#"
-				target="_blank"
-				class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
-				>
-				<svg
-					class="fill-current"
-					width="20"
-					role="img"
-					viewBox="0 0 24 24"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<title>YouTube</title>
-					<path
-					d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
-					/>
-				</svg>
-				</a> -->
             <!-- Instagram -->
             <a
               href="https://instagram.com/yhya.si_30"
@@ -374,7 +356,6 @@
             </p>
             <p></p>
           </div>
-
         </div>
       </div>
     </section>
@@ -431,7 +412,11 @@
             <div
               class="mb-10 h-[540px] overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 dark:shadow-slate-700"
             >
-              <img src="./dist/img/pmm.jpg" alt="Programming" class="w-full h-72 " />
+              <img
+                src="./dist/img/pmm2.jpg"
+                alt="Programming"
+                class="h-72 w-full"
+              />
               <div class="px-6 py-8">
                 <h3>
                   <a
@@ -441,9 +426,10 @@
                   >
                 </h3>
                 <p class="mb-6 text-base font-medium text-secondary">
-                  This is a one-semester national student exchange program by Ministry of
-                  Culture, Research and Technology of The Republic of Indonesia.
-                  I took my term at Informatics and Information System Department in
+                  This is a one-semester national student exchange program by
+                  Ministry of Culture, Research and Technology of The Republic
+                  of Indonesia. I took my term at Informatics and Information
+                  System Department in
                   <a
                     href="https://www.itenas.ac.id/"
                     class="hover:text-primary hover:underline"
@@ -455,24 +441,24 @@
           </div>
           <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
             <div
-              class="mb-10 h-[540px] overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 dark:shadow-slate-700 "
+              class="mb-10 h-[540px] overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 dark:shadow-slate-700"
             >
               <div class="bg-cover">
                 <img
                   src="./dist/img/bdt.jpg"
                   alt="Programming"
-                  class="h-72 w-full "
+                  class="h-72 w-full"
                 />
               </div>
-              <div class="px-6 py-8 ">
+              <div class="px-6 py-8">
                 <h3>
                   <a
                     href="https://bdd.kemenparekraf.go.id/"
-                    class=" mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white"
+                    class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white"
                     >Baparekraf Digital Talent</a
                   >
                 </h3>
-                <p class="mb-6 text-base font-medium text-secondary ">
+                <p class="mb-6 text-base font-medium text-secondary">
                   <a
                     href="https://bdd.kemenparekraf.go.id/"
                     class="hover:text-primary hover:underline"
@@ -559,17 +545,16 @@
     </section>
     <!-- Clients Section End -->
 
-
     <!-- Footer Start  -->
-    <footer class="bg-dark pb-12 pt-24 " id="footer">
-      <div class="container ">
+    <footer class="bg-dark pb-12 pt-24" id="footer">
+      <div class="container">
         <div class="flex flex-wrap">
           <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
             <h2 class="mb-2 text-4xl font-bold text-white">ANDI YAHYA</h2>
             <h3 class="mb-2 text-2xl font-bold">Contact Me</h3>
             <p>andiyahya675@gmail.com</p>
             <div class="w-full pt-1">
-              <div class="mb-2 flex  justify-start">
+              <div class="mb-2 flex justify-start">
                 <!-- Instagram -->
                 <a
                   href="#"
@@ -589,7 +574,7 @@
                     />
                   </svg>
                 </a>
-    
+
                 <!-- Facebook -->
                 <a
                   href="#"
@@ -629,12 +614,11 @@
                   </svg>
                 </a>
               </div>
-
             </div>
             <p>Bengkulu City, Bengkulu</p>
             <p>Indonesia</p>
           </div>
-          
+
           <div class="mb-12 w-full px-4 md:w-1/3">
             <h3 class="mb-2 text-xl font-thin text-white">Link</h3>
             <ul class="text-slate-300">
@@ -666,9 +650,6 @@
                   >Blog</a
                 >
               </li>
-
-
-
               <li id="12">
                 <a
                   href="#technology"
@@ -682,28 +663,29 @@
         <div class="w-full border-t border-slate-700 pt-10">
           <div class="mb-5 flex items-center justify-center">
             <!-- Instagram -->
-            
-          <p class="text-center text-sm font-medium text-slate-500">
-            &copy Was Created By
-            <a
-              href="https://www.linkedin.com/in/andi-yahya-a92a0a256/"
-              target="_blank"
-              class="hover:text-primary hover:underline"
-              >Andi Yahya</a
-            >, Using
-            <a
-              href="https://tailwindcss.com/"
-              target="_blank"
-              class="hover:text-primary hover:underline"
-              >Tailwind
-            </a>
-            <a
-              target="_blank"
-              class="hover:text-primary hover:underline"
-              href="https://www.w3schools.com/css/css_intro.asp"
-              >CSS</a
-            >
-          </p>
+
+            <p class="text-center text-sm font-medium text-slate-500">
+              &copy Created By
+              <a
+                href="https://www.linkedin.com/in/andi-yahya-a92a0a256/"
+                target="_blank"
+                class="hover:text-primary hover:underline"
+                >Andi Yahya</a
+              >, Using
+              <a
+                href="https://tailwindcss.com/"
+                target="_blank"
+                class="hover:text-primary hover:underline"
+                >Tailwind
+              </a>
+              <a
+                target="_blank"
+                class="hover:text-primary hover:underline"
+                href="https://www.w3schools.com/css/css_intro.asp"
+                >CSS</a
+              >
+            </p>
+          </div>
         </div>
       </div>
     </footer>
