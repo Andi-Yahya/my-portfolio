@@ -6,7 +6,8 @@
     <title>Andi Yahya || Homepage</title>
     <script>
       if (
-        localStorage.theme === "dark" || (!("theme" in localStorage) &&
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
           window.matchMedia("(prefers-color-scheme: dark)").matches)
       ) {
         document.documentElement.classList.add("dark");
@@ -412,11 +413,13 @@
             <div
               class="mb-10 h-[540px] overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 dark:shadow-slate-700"
             >
-              <img
-                src="./dist/img/pmm2.jpg"
-                alt="Programming"
-                class="h-72 w-full"
-              />
+              <div class="bg-cover">
+                <img
+                  src="./dist/img/pmm2.JPG"
+                  alt="PMM 2"
+                  class="h-72 w-full"
+                />
+              </div>
               <div class="px-6 py-8">
                 <h3>
                   <a
@@ -426,6 +429,11 @@
                   >
                 </h3>
                 <p class="mb-6 text-base font-medium text-secondary">
+                  <a
+                    href="https://bdd.kemenparekraf.go.id/"
+                    class="hover:text-primary hover:underline"
+                    >Baparekraf Digital Talent (BDT)</a
+                  >
                   This is a one-semester national student exchange program by
                   Ministry of Culture, Research and Technology of The Republic
                   of Indonesia. I took my term at Informatics and Information
