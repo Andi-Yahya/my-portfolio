@@ -1,15 +1,27 @@
-// Navbar  Fixed
-// window.addEventListener('scroll', ()=>{
-//     const header = document.querySelector("header");
-//     const fixedNav = header.offsetTop;
+const cta = document.getElementById("cta");
+const listOfCta = [
+  "Hello There",
+  "Welcome!",
+  "Thanks For Coming!",
+  "Hire Me!!",
+];
+let i = 0;
+const displayHello = () => {
+  cta.innerHTML = listOfCta[i];
+  if (i < listOfCta.length - 1) {
+    i++;
+  } else {
+    i = 0;
+  }
+};
+setInterval(displayHello, 2000);
 
-//     if(window.scrollY > fixedNav) {
-//         header.classList.add('navbar-fixed')
-//     } else {
-//         header.classList.remove ('navbar-fixed')
-//     }
-
-// })
+const scrolledWindow = () => {
+  if (window.scrollY >500) {
+    console.log("Hello");
+  }
+};
+window.addEventListener("scroll", scrolledWindow);
 
 window.onscroll = function () {
   const toTop = document.querySelector("#to-top");
@@ -31,9 +43,6 @@ window.onscroll = function () {
 
 const hamburger = document.querySelector("#hamburger");
 
-// hamburger.addEventListener("click", () => {
-// 	hamburger.classList.toggle("hamburger-active");
-// });
 const navMenu = document.querySelector("#nav-menu");
 
 hamburger.onclick = function () {
@@ -121,27 +130,28 @@ function sendMail() {
     },
     function (error) {
       alert(
-        "FAILED..."+
+        "FAILED..." +
           " something unexpected happened, your message couldn't be sent. Instead, please attempt to reach me through my social media. 🙏",
       );
     },
-  )
+  );
 }
 
 buttonSend.addEventListener("click", (event) => {
   event.preventDefault();
   sendMail();
-  // alert(
-  //   "Status: " +
-  //     "response.status" +
-  //     ", " +
-  //     "response.text" +
-  //     ", " +
-  //     " Terima Kasih telah menghubungi saya " +
-  //     SenderName.value +
-  //     ".",
-  // );
   SenderName.value = "";
   email.value = "";
   message.value = "";
 });
+
+// check dark || light mode
+if (
+  localStorage.theme === "dark" ||
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
+  document.documentElement.classList.add("dark");
+} else {
+  document.documentElement.classList.remove("dark");
+}

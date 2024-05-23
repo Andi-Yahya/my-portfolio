@@ -4,17 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andi Yahya || Homepage</title>
-    <script>
-      if (
-        localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
-    </script>
+
     <link
       type="image/png"
       sizes="96x96"
@@ -23,7 +13,7 @@
     />
     <link rel="stylesheet" href="./dist/css/final.css" />
   </head>
-  <body class="overflow-x-hidden">
+  <body>
     <!-- Header Start -->
     <header
       class="absolute left-0 top-0 z-10 flex w-full items-center bg-transparent"
@@ -31,8 +21,11 @@
       <div class="container">
         <div class="relative flex items-center justify-between">
           <div class="px-4">
-            <a href="#home" class="block py-6 text-lg font-bold text-primary"
-              >Andi Yahya</a
+            <a
+              href="#home"
+              id="cta"
+              class="block py-6 text-lg font-bold text-primary"
+              >Hire Me!!</a
             >
           </div>
           <div class="flex items-center px-4">
@@ -78,20 +71,6 @@
                     >Portfolio</a
                   >
                 </li>
-                <li class="group">
-                  <a
-                    href="#blog"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
-                    >Blog</a
-                  >
-                </li>
-                <li class="group">
-                  <a
-                    href="#technology"
-                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white"
-                    >Technology</a
-                  > 
-                </li>
 
                 <li class="group">
                   <a
@@ -125,7 +104,7 @@
     <!-- Header end -->
 
     <!-- Hero Section Start -->
-    <section class="pt-36 dark:bg-dark" id="home">
+    <section class="overflow-x-hidden pt-36 dark:bg-dark" id="home">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
@@ -149,7 +128,7 @@
             </p>
 
             <a
-              href="#footer"
+              href="#contact"
               class="rounded-full bg-primary px-8 py-3 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
               >Contact Me</a
             >
@@ -218,7 +197,11 @@
             Let's Connect
           </h3>
           <p class="mb-6 text-base font-medium text-secondary lg:text-lg">
-            Welcome! I'm passionate about building meaningful professional connections. If you're driven by excellence and innovation, let's connect. Whether you have a project in mind or want to discuss with me, I'm eager to hear from you. Reach me out via the contacts below. Let's explore opportunities together.
+            Welcome! I'm passionate about building meaningful professional
+            connections. If you're driven by excellence and innovation, let's
+            connect. Whether you have a project in mind or want to discuss with
+            me, I'm eager to hear from you. Reach me out via the contacts below.
+            Let's explore opportunities together.
           </p>
           <div class="flex items-center">
             <!-- Instagram -->
@@ -285,277 +268,6 @@
     </section>
     <!-- About Section End -->
 
-    <!-- Portfolio Section Start -->
-    <section id="portfolio" class="bg-slate-100 pb-16 pt-36 dark:bg-slate-800">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary">Portfolio</h4>
-            <h2
-              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
-            >
-              Projects
-            </h2>
-            <p class="text-md font-medium text-secondary md:text-lg">
-              Here are some projects that i made
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12 "
-        >
-          <div class="mb-23 p-4 md:w-1/2 group">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img
-                class="w-full"
-                src="./dist/img/web3.png"
-                alt="landing"
-                title="satu"
-              />
-            </div>
-            <h3 class="mb-3 mt-5 text-xl font-light text-dark dark:text-white  ">
-              <a class="group-hover:text-primary text-dark dark:text-white "  target="_blank" href="https://frontend-design-assignment-andi-yahya.vercel.app/">A Campaign Website</a>
-            </h3>
-            <p class="text-base font-medium text-secondary">
-              I've developed a campaign website using Bootstrap 5, CSS 3, and JavaScript. Its purpose is to encourage visitors to take action by registering and exploring the articles.
-            </p>
-          </div>
-          <div class="mb-23 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img
-                class="w-full"
-                src="./dist/img/news-web-1.png"
-                alt="landing"
-                title="satu"
-              />
-            </div>
-            <h3 class="mb-3 mt-5 text-xl font-light text-dark dark:text-white">
-              News websites
-            </h3>
-            <p class="text-base font-medium text-secondary">
-              A news website and Movie Discoverage page. It was designed in
-              group consists of 2 people. This website was built with HTML 5,
-              CSS 3, Bootstrap 5 and Javascript.
-            </p>
-          </div>
-          <div class="mb-23 p-4 md:w-1/2">
-            <div class="overflow-hidden rounded-md shadow-md">
-              <img
-                class="w-full"
-                src="./dist/img/web-2.png"
-                alt="landing"
-                title="dua"
-              />
-            </div>
-            <h3 class="mb-3 mt-5 text-xl font-light text-dark dark:text-white">
-              Movie Discovery
-            </h3>
-            <p class="text-base font-medium text-secondary">
-              Animelist website is a website for showing list of anime movies
-              that i collected using Jikan, Jikan is an unofficial MyAnimeList
-              REST based API. This project was built with React.js and Next.js
-              as framework for developing website, TailwindCSS for styling the
-              elements, and here i made simple auntentication using Github OAuth
-              Apps.
-            </p>
-            <p></p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Portfolio Section End -->
-
-    <!-- Blog Section Start -->
-    <section id="blog" class="bg-slate-100 pb-32 pt-36 dark:bg-dark">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto mb-16 max-w-xl text-center">
-            <h4 class="mb-2 text-lg font-semibold text-primary">Blog</h4>
-            <h2
-              class="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl lg:text-5xl"
-            >
-              Activities
-            </h2>
-            <p class="text-md font-medium text-secondary md:text-lg">
-              Here are some activities i have been involved throughout the year
-            </p>
-          </div>
-        </div>
-        <div class="flex flex-wrap">
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div
-              class="mb-10 h-[460px] overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 dark:shadow-slate-700 md:h-[540px]"
-            >
-              <img
-                src="./dist/img/ausp.webp"
-                alt="Programming"
-                class="h-52 w-full md:h-72"
-              />
-              <div class="px-6 py-8">
-                <h3>
-                  <a
-                    href="https://web.asia.edu.tw/EN/"
-                    class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white"
-                    >Asia University 2023 (AUSP)</a
-                  >
-                </h3>
-                <p class="mb-6 text-base font-medium text-secondary">
-                  <a
-                    href="https://web.asia.edu.tw/EN/"
-                    class="hover:text-primary hover:underline"
-                    >Asia University</a
-                  >
-                  Summer Program 2023 is a special term program for foreign
-                  student to experience one course during the program. In this
-                  Program, I took Web Design and Digital Storytelling Course.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div
-              class="mb-10 h-[540px] overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 dark:shadow-slate-700"
-            >
-              <div class="bg-cover">
-                <img
-                  src="https://www.itenas.ac.id/wp-content/uploads/2022/09/Itenas-Sambut-127-Mahasiwa-Inbound-Program-Pertukaran-Mahasiswa-Merdeka-5-500x313.jpg"
-                  alt="PMM 2"
-                  class="h-52 w-full md:h-72"
-                />
-              </div>
-              <div class="px-6 py-8">
-                <h3>
-                  <a
-                    href="https://program-pmm.id/"
-                    class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white"
-                    >Pertukaran Mahasiswa Merdeka 2</a
-                  >
-                </h3>
-                <p class="mb-6 text-base font-medium text-secondary">
-                  <a
-                    href="https://bdd.kemenparekraf.go.id/"
-                    class="hover:text-primary hover:underline"
-                    >Baparekraf Digital Talent (BDT)</a
-                  >
-                  This is a one-semester national student exchange program by
-                  Ministry of Culture, Research and Technology of The Republic
-                  of Indonesia. I took my term at Informatics and Information
-                  System Department in
-                  <a
-                    href="https://www.itenas.ac.id/"
-                    class="hover:text-primary hover:underline"
-                    >Bandung National Institute Of Technology.</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-            <div
-              class="mb-10 h-[500px] overflow-hidden rounded-xl bg-white shadow-lg dark:bg-slate-800 dark:shadow-slate-700 md:h-[540px]"
-            >
-              <div class="bg-cover">
-                <img
-                  src="./dist/img/bdt.jpg"
-                  alt="Programming"
-                  class="h-52 w-full md:h-72"
-                />
-              </div>
-              <div class="px-6 py-8">
-                <h3>
-                  <a
-                    href="https://bdd.kemenparekraf.go.id/"
-                    class="mb-3 block truncate text-xl font-semibold text-dark hover:text-primary dark:text-white"
-                    >Baparekraf Digital Talent</a
-                  >
-                </h3>
-                <p class="mb-6 text-base font-medium text-secondary">
-                  <a
-                    href="https://bdd.kemenparekraf.go.id/"
-                    class="hover:text-primary hover:underline"
-                    >Baparekraf Digital Talent (BDT)</a
-                  >
-                  is a Creative Digital Talent Development program facilitated
-                  by the Ministry of Tourism and Creative Economy/Baparekraf.
-                  This program facilitated me with front-end web developer
-                  learning path in
-                  <a
-                    href="https://www.dicoding.com/"
-                    class="hover:text-primary hover:underline"
-                    >Dicoding Indonesia.</a
-                  >
-                </p>
-                <!-- <a
-					href="#"
-					class="rounded-md bg-primary px-4 py-2 text-[10px] font-medium text-white hover:opacity-80 sm:text-sm"
-					>Baca Selengkapnya</a
-					> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Blog Section End -->
-
-    <!-- Clients Section Start -->
-    <section id="technology" class="bg-slate-800 pb-32 pt-36 dark:bg-slate-300">
-      <div class="container">
-        <div class="w-full px-4">
-          <div class="mx-auto mb-16 text-center">
-            <!-- <h4 class="mb-2 text-lg font-semibold text-primary">Technology</h4> -->
-            <h2
-              class="mb-4 text-3xl font-bold text-primary dark:text-dark sm:text-4xl lg:text-5xl"
-            >
-              Technology
-            </h2>
-            <p class="text-md font-medium text-secondary md:text-lg">
-              These are technologies that im currently using for developing my
-              website
-            </p>
-          </div>
-        </div>
-
-        <div class="w-full px-4">
-          <div class="flex flex-wrap items-center justify-center">
-            <a
-              href="https://www.w3schools.in/html/history"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:scale-105 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
-            >
-              <img class="mt-7" src="dist/img/clients/html5.svg" alt="" />
-            </a>
-
-            <a
-              href="https://en.wikipedia.org/wiki/CSS"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:scale-105 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
-            >
-              <img src="dist/img/clients/css.svg" alt="" />
-            </a>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/API/History"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:scale-105 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
-            >
-              <img src="dist/img/clients/js.svg" alt="" />
-            </a>
-            <a
-              href="https://react.dev/"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:scale-105 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
-            >
-              <img src="dist/img/clients/react.svg" alt="" />
-            </a>
-
-            <a
-              href="https://tailwindcss.com/"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:scale-105 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
-            >
-              <img src="dist/img/clients/tailwindcss.svg" alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Clients Section End -->
-
     <!-- Contact Section Start  -->
     <section id="contact" class="pb-32 pt-10 dark:bg-slate-800">
       <div class="container">
@@ -569,7 +281,11 @@
             </h2>
             <p class="text-md font-medium text-secondary md:text-lg">
               If you have any further inquiries, kindly contact me!
-              <p class="text-xs font-normal text-slate-600">Please be patient if there are some errors regarding this, thank you for your understanding 😉</p>
+            </p>
+
+            <p class="text-xs font-normal text-slate-600">
+              Please be patient if there was an error regarding this, thank you
+              for your understanding 😉
             </p>
           </div>
         </div>
@@ -630,7 +346,7 @@
           <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
             <h2 class="mb-2 text-4xl font-bold text-white">ANDI YAHYA</h2>
             <h3 class="mb-2 text-2xl font-bold">Contact Me</h3>
-            <p>andiyahya675@gmail.com</p>
+            <p>andiyahya671@gmail.com</p>
             <div class="w-full pt-1">
               <div class="mb-2 flex justify-start">
                 <!-- Instagram -->
@@ -721,20 +437,6 @@
                   >Portfolio</a
                 >
               </li>
-              <li id="12">
-                <a
-                  href="#blog"
-                  class="mb-3 inline-block text-base text-slate-300 hover:text-primary"
-                  >Blog</a
-                >
-              </li>
-              <li id="12">
-                <a
-                  href="#technology"
-                  class="mb-3 inline-block text-base text-slate-300 hover:text-primary"
-                  >Technology</a
-                >
-              </li>
             </ul>
           </div>
         </div>
@@ -777,6 +479,7 @@
     >
       <span class="mt-2 block h-5 w-5 rotate-45 border-l-2 border-t-2"></span>
     </a>
+
     <!-- Back to top End  -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="dist/js/script.js"></script>
