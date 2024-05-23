@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html"],
+  content: ["*.html", "./portfolio/*.html"],
   darkMode: "class",
   theme: {
     container: {
@@ -18,6 +18,9 @@ module.exports = {
       },
       dropShadow: {
         "3xl": "5px 2px 5px rgba(255,255, 255, 0.25)",
+      },
+      fontFamily: {
+        tesFont: ["Pacifico", "cursive"],
       },
     },
   },
