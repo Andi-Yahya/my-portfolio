@@ -22,6 +22,21 @@ module.exports = {
       fontFamily: {
         tesFont: ["Pacifico", "cursive"],
       },
+      animation: {
+        "infinite-scroll": "infinite-scroll 35s linear infinite",
+        "infinite-scroll-paused":
+          "infinite-scroll-paused 10s linear infinite paused",
+      },
+      keyframes: {
+        "infinite-scroll": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        "infinite-scroll-paused": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
     },
   },
   plugins: [],
